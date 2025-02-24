@@ -12,9 +12,12 @@ import time
 import random
 import pandas as pd
 import json
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
-URL = r"https://docs.google.com/forms/d/1SadneeA-RnbGsx7uMkfV_iuE5v5MbAweDCOTPp0qVaE/viewform?edit_requested=true"
+URL = os.getenv('URL')
 
 options = webdriver.ChromeOptions()
 options.add_argument('--disable-tensorflow')  # ปิดการใช้งาน TensorFlow
@@ -253,9 +256,12 @@ for idx, label in enumerate(correct_label):
 
 
 # บันทึกข้อมูลคำตอบที่ถูกต้องลงในไฟล์ JSON
-with open("correct_answers.json", "w", encoding="utf-8") as json_file:
-    json.dump(correct_answers, json_file, ensure_ascii=False, indent=4)
-
+try:
+    with open("correct_answers.json", "w", encoding="utf-8") as json_file:
+        json.dump(correct_answers, json_file, ensure_ascii=False, indent=4)
+        print("\n✅ บันทึกข้อมูลคะแนนที่ถูกต้องสําเร็จ!\n")
+except Exception as e:
+    print(f"❌ เกิดข้อผิดพลาดในการบันทึกข้อมูล: {e}")
 
 # ปิดหน้าเว็บ
 time.sleep(3)
