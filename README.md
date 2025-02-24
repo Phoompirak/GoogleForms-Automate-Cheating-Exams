@@ -15,4 +15,8 @@
 # :clapper: Video Demonstration File 'google_form_scrap.ipynb' Results
 [(https://github.com/Phoompirak/Google-forms-automate/blob/main/screenshot/timelapse-automate-forms.mp4)](https://github.com/user-attachments/assets/2e824c6b-6b1e-4311-a68e-ec4f13c7329c)
 ### What you can get from the file
+<<<<<<< HEAD
  - All answer for eams in JSON file
+=======
+ - All answer for eams in JSON file
+>>>>>>> db61de2230587e7ccf7b3296c886763146462c0d
