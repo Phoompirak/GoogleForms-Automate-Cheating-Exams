@@ -16,6 +16,15 @@
 
 # :clapper: Video Demonstration File 'google_form_scrap.ipynb' Results
 [(https://github.com/Phoompirak/Google-forms-automate/blob/main/screenshot/timelapse-automate-forms.mp4)](https://github.com/user-attachments/assets/2e824c6b-6b1e-4311-a68e-ec4f13c7329c)
-### What you can get from the file
- - All answer for eams in JSON file
+### What to do in this file
+ - ใส่ข้อมูลเพื่อเข้าไปทำข้อสอบเเบบมั่วๆ
+ - ส่งคำตอบแบบมั่วๆแล้วกดดูเฉลย
+ - บันทึกเฉลยลงไฟล์JSON
 
+
+# 🎬 Video Demonstration - 'answer-forms.ipynb' Results  
+[![Watch the Video](https://github.com/Phoompirak/Google-forms-automate/blob/main/screenshot/timelapse-automate-forms.mp4)](https://github.com/user-attachments/assets/4331c62d-ebae-4110-935f-ee7afababa53)
+### What to do in this file
+ - ใส่ข้อมูลของผู้ทำข้อสอบ(ในไฟล์.env)
+ - เริ่มตอบคำถามโดยดึงเฉลยจากJSONมาตอบ
+ - กดดูคะแนนเต็ม แล้วแคปไว้
